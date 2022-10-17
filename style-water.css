@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+/* Header and logo*/
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+.wrapper p{
+    margin: 1.5%;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #c0392b;
+    position: fixed; 
+    margin-top: 0%;
+  
+}
+.logo{
+    height: 10%;
+    width: 30%;
+    float: left;
+    text-align: left;
+    line-height: 80px;
+    margin-left: 5%;
+}
+.logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    letter-spacing: 4px;
+    
+}
+nav{
+    float: right;
+    line-height: 80px;
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 23px;
+    color: beige;
+    padding: 36px;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: #f1a9a4;
+    color: black;
+}
+/* Content*/
+.content-area{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: white;
+    top: 80px;
+    
+}
+/* Footer*/
+footer{
+    background-color: rgb(16, 16, 16);
+    height: 260px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+
+
+}
+.copyright p{
+    color:rgb(137, 135, 135) ;
+    text-align: center;
+    font-size: 15px;
+    line-height:35px;
+    margin-top:0;
+    padding-top:0;
+}
+.copyright p:hover{
+    color: white;
+}
+hr{
+
+    height: 1px;
+    background-color: rgb(137, 135, 135);
+    border: none;
+}
+.footer-heading{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    font-size:25px;
+    margin-top:20px;
+    padding-top:30px;
+    
+}
+.footer-heading a{
+    color: rgb(137, 135, 135);
+    
+}
+.fl{
+    display:flex;
+    justify-content:center;
+    gap:110px;
+    margin-top:20px;
+ 
+}
+.fl a{
+    color:rgb(137, 135, 135);
+    display:flex;
+    margin-top:15px;
+    margin-bottom:15px;
+    padding-right:20px;
+    justify-content:space-between;
+    
+
+}
+.fl a:hover{
+    color:white;
+}
+.social-media{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    gap:1100px;
+    margin-bottom: 1px;
+
+}
+.content-area .social-media p{
+    line-height: 0;
+}
+.social-media p{
+    color:rgb(137, 135, 135);
+    padding-left:12px;
+}
+.wrapper .social-media p{
+    margin:0;
+    padding:0;
+  }
+.fa {  
+    padding-right:12px;
+}  
+.sm-icons{
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+.fa-facebook {     
+    color: rgb(137, 135, 135);  
+}  
+.fa-twitter {      
+    color: rgb(137, 135, 135);  
+}  
+.fa-linkedin {   
+    color: rgb(137, 135, 135);  
+}  
+.fa-instagram {   
+    color: rgb(137, 135, 135);  
+}  
+.fa-github{
+     color: rgb(137, 135, 135);  
+}
+.fa-facebook:hover{
+    color: white;
+}
+.fa-twitter:hover{
+    color: white;
+}
+.fa-linkedin:hover{
+    color: white;
+}
+.fa-instagram:hover{
+    color: white;
+}
+.fa-github:hover{
+    color: white;
+}
