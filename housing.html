@@ -5,57 +5,133 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Electricity</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-water.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">  
+
 </head>
 <body>
     <div class="box-area">
         <!--Header--->     
-         <header>
-            <div class="wrapper">
-                <div class="logo">
-                    <a href="#">Abelia</a>
-                </div>
-
-             <nav>
-                <a href="#">Home</a>
-                <a href="#">Services</a>
-                <a href="#">Contact Us</a>
-              </nav>
+        <header>
+            <div class="menu_bar">
+                <p class="logo"><a href="index.html">Abelia</a></p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Services<i class="
+                        fas fs-caret-down"></i></a>
+                            <div class="dropdown_menu">
+                                <ul>
+                                    <li><a href="electricity.html">Electricity</a></li>
+                                    <li><a href="water.html">Water</a></li>
+                                    <li><a href="housing.html">Housing</a></li>
+                                 </ul>
+                            </div> 
+                        </li>
+                        <li><a href="#">About Us<ii class="fas fs-caret-down"></ii></a>
+                            <div class="dropdown_menu2">
+                                <ul>
+                                    <li><a href="#">Vison</a></li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <li><a href="team.html">Team</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
-        <!--Footer--->     
+        <!--Content-->
+        <div class="content-area">
+            <div class="wrapper-down">
+                <h1>
+                    Text Details
+                </h1>
+                <p class=""><br>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos pariatur repellendus quae explicabo aperiam sit laboriosam deleniti ipsa. Blanditiis neque ipsa id explicabo consequuntur quo exercitationem impedit ullam. Error, nobis.
+  
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium obcaecati excepturi natus unde magnam ipsum harum, adipisci debitis hic quibusdam inventore voluptatem reprehenderit, perferendis dolore distinctio repellendus atque, asperiores odio?
+                    <br>
+                    <br> 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium non voluptatibus ad adipisci repellat voluptas. Esse accusamus optio inventore sequi corrupti. Cum optio sapiente magni pariatur doloremque maiores vel ratione?
+                </p>
+              
+            </div>
+            <div class="complain-form">
+                <form>
+                    <h2>Fill the form to raise a complain</h2>
+                </form>
+                
+                <div class="input-box">
+                    <input type="text" name=""  placeholder="First Name" required="required">  
+                </div>
+                <div class="input-box">
+                    <input type="text" name="" required="required" placeholder="Mobile Number" >         
+                </div>
+                <div class="input-box">
+                    <input type="text" name="" required="required" placeholder="E-mail" >         
+                </div>
+                <select id="society-name" name="" >
+                    <option value="" disabled selected hidden>Select Your Society</option>
+                    <option value="society1">Society1</option>
+                    <option value="society2">Society2</option>
+                </select>
+                <div class="house">
+                <select id="block" name="" >
+                    <option value="" disabled selected hidden>Select Your Block</option>
+                    <option value="society1">A</option>
+                    <option value="society2">B</option>
+                    <option value="society1">C</option>
+                    <option value="society2">D</option>
+                </select>
+                <div class="input-box" id="flat-no">
+                    <input type="text" name=""
+                     required="required" placeholder="Flat Number" >         
+                 </div> 
+            </div>
+                
+                <div class="input-b0x">
+                    <textarea id="message" placeholder="Type your complain" cols="70" rows="8"></textarea> 
+                </div>
+                <div class="input-box">
+                    <input type="submit" name="" value="Send"> 
+                </div>-->
+            </div>
+        </div>
+        <!--Footer-->
         <footer>
             <div class="footer">
-                <div class="wrapper">
-                    <table>
-                        <tr>
-                             <th><a href="">About US</a></th>
-                             <th><a href="">Info</a></th>
-                              <th><a href="">Quick Links</a></th>
-                         </tr>
-                         <tr>
-                               <td><a href="electricity.html">Electricity</a></td>
-                                <td><a href="">Projects</a></td>
-                                <td><a href="">hello</a></td>
-                        </tr>
-                        <tr>
-                                 <td><a href="water.html">Water</a></td>
-                                 <td><a href="">Team</a></td>
-                                 <td><a href="">hello</a></td>
-                         </tr>
-                         <tr>
-                                 <td><a href="housing.html">Housing</a></td>
-                                 <td><a href="">Location</a></td>
-                                 <td><a href="">Hello</a></td>
-                         </tr>
-                        </table>
-                    
-                        <hr>
-                        <div class="copyright">
-                        <p>Made By: </p>
-                        </div>
-                        </div>
+                <div class="about-us">
+                    <h4>About Us</h4>
+                    <a href="">Vision</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="team.html">Team</a>
+                </div>
+                <div class="quick-link">
+                    <h4>Quick Links</h4>
+                    <a href="electricity.html">Electricity</a>
+                    <a href="water.html ">Water</a>
+                   <a href="housing.html">Housing</a>
+                </div>
+                <div class="contact-us">
+                    <h4>Conatct Us</h4>
+                    <a href="#">Ground Floor, Cross River Mall, Maharaja Surajmal Marg, Vishwas Nagar Extension, Shahdara</a>
+                    <a href="# ">fake.mail@gmail.com</a>
+                   <a href="#">9910XXXXXX</a>
+                   <div class="sm-icons">
+                    <a href="#" class="fa fa-linkedin"></a>  
+                    <a href="#" class="fa fa-twitter"></a>  
+                    <a href="#" class="fa fa-instagram"></a>  
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class='fa fa-github'></a>  
+                </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Abelia © 2022 </p>
                 </div>
         </footer>
     </div>

@@ -10,7 +10,7 @@
 body{
     font-family: sans-serif;
     text-align: center;
-}
+}/*
 .wrapper{
     width: 100%;
     margin: 0 auto;
@@ -37,7 +37,6 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: beige;
     letter-spacing: 4px;
-    
 }
 nav{
     float: right;
@@ -54,198 +53,238 @@ nav a{
 }
 
 nav a:hover{
-    background-color: #f1a9a4;
     color: black;
+}*/
+.menu_bar{
+    position: fixed;
+    background-color: #c0392b;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+.logo a{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    letter-spacing: 4px;
+}
+.menu_bar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.menu_bar ul li{
+    padding: 5px 15px;
+    position: relative;
+}
+.menu_bar ul li a{
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: beige;
+    transition:all 0.2s ;
+}
+.menu_bar ul li a:hover{
+   
+    color: black;
+}
+.fs-caret-down{
+    height: 2px;
+    width: 1px;
+    color: rgb(255, 255, 255);
+    
+}
+
+.dropdown_menu{
+    display: none;
+}
+.menu_bar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #c0392b;
+}
+.menu_bar ul li:hover .dropdown_menu ul{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .dropdown_menu ul li{
+    width: 150px;
+    padding: 10px;
+}
+.dropdown_menu2{
+    display: none;
+}
+.menu_bar ul li:hover .dropdown_menu2{
+    display: block;
+    position: absolute;
+    left: 0;
+    background-color: #c0392b;
+}
+.menu_bar ul li:hover .dropdown_menu2 ul{
+    display: block;
+    margin: 10px;
+}
+.menu_bar ul li:hover .dropdown_menu2 ul li{
+    width: 150px;
+    padding: 10px;
 }
 /* Content*/
 .content-area{
     width: 100%;
-    height: 500px;
-    position: relative;
     background-color: white;
     top: 80px;
-    
 }
 .content-area h2{
     font-size: 40px;
     margin: 0;
-    padding-top: 40px;
+    padding-top: 100px;
     letter-spacing: 4px;
 }
-.content-area p{
-    padding: 4% 0;
-    line-height: 30px;
+.content-area  p{
+    padding: 4vh 0;
+    margin: 0 5vw 6vh;
+    line-height: 4vh;
     text-align: justify;
 }
-.copyright p{
-    color:rgb(137, 135, 135) ;
-    text-align: center;
-    font-size: 15px;
-    line-height:35px;
-    margin-top:0;
-    padding-top:0;
-}
-.copyright p:hover{
-    color: white;
-}
 img{
-    height: 380px;
-    width: 400px;
+    height: 50vh;
+    width: 30vw;
 }
-.team-description{
-    display: grid;
-    grid-template-columns: 720px 720px;
-    column-gap: 30px;
-    row-gap: 100px;
-    padding: 20px;
-}
-.architects{
+.container1{
     display: flex;
-    gap:15px;
-    
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6vh 0 6vh;
 }
-.architects p{
-    width: 450px;
+.container1 h3{
+    padding: 5vh 0;
+    font-weight: 700;
+    font-size: 30px;
 }
-.pic-architects{
-    padding-left: 4%;
+.container1 .architects-text p{
+    width: 30vw;
+    text-align: justify;
 }
-.interior-designers{
-    display: flex;
-    gap:15px;
-}
-.interior-designers p{
-    width: 450px;
-   
-}
-.pic-interior{
-    padding-left: 4%;
-}
-.management{
-    display: flex;
-    gap:15px;
-}
-.management p{
-    width: 450px;
-}
-.pic-management{
-    padding-left: 4%;
-}
-.security{
-    display: flex;
-    gap:15px;
-}
-.security p{
-    width: 450px;
-}
-.pic-security{
-    padding-left: 4%;
-}
+.container1 .interior-designer p{
+    width: 30vw;
+    text-align: justify;
 
+}
+.container2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6vh 0 6vh;
+}
+.container2 h3{
+    padding: 5vh 0;
+    font-weight: 700;
+    font-size: 30px;
+}
+.container2 .management p{
+    width: 30vw;
+    text-align: justify;
 
+}
+.container2 .security p{
+    width: 30vw;
+    text-align: justify;
 
-/* Footer*/
+}
+/*Footer*/
 footer{
+    height: 45vh;
     background-color: rgb(16, 16, 16);
-    height: 260px;
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
-
 }
-hr{
-
-    height: 1px;
-    background-color: rgb(137, 135, 135);
-    border: none;
-}
-.footer-heading{
-    display:flex;
-    justify-content:center;
-    gap:80px;
-    font-size:25px;
-    margin-top:20px;
-    padding-top:30px;
-    
-}
-.footer-heading a{
-    color:rgb(137, 135, 135);
-}
-.fl{
-    display:flex;
-    justify-content:center;
-    gap:110px;
-    margin-top:20px;
- 
-}
-.fl a{
-    color:rgb(137, 135, 135);
-    display:flex;
-    margin-top:15px;
-    margin-bottom:15px;
-    padding-right:20px;
-    justify-content:space-between;
-    
-
-}
-.fl a:hover{
-    color:white;
-}
-.social-media{
+.footer{
+    background-color: rgb(16, 16, 16);
     display: flex;
-    justify-content: space-between;
-    align-items:center;
-    gap:1100px;
-    margin-bottom: 1px;
-
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
 }
-.content-area .social-media p{
-    line-height: 0;
-}
-.social-media p{
-    color:rgb(137, 135, 135);
-    padding-left:12px;
-}
-.wrapper .social-media p{
-    margin:0;
-    padding:0;
-  }
-.fa {  
-    
-    padding-right:12px;
-}  
-.sm-icons{
+.footer h4{
     display: flex;
-    justify-content: space-between;
-    gap:20px;
+    align-items: center;
+    justify-items: flex-start;
 }
-.fa-facebook {     
-    color: rgb(137, 135, 135);  
-}  
-.fa-twitter {      
-    color: rgb(137, 135, 135);  
-}  
-.fa-linkedin {   
-    color: rgb(137, 135, 135);  
-}  
-.fa-instagram {   
-    color: rgb(137, 135, 135);  
-}  
-.fa-github{
-     color: rgb(137, 135, 135);  
+.footer .about-us{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
 }
-.fa-facebook:hover{
+.footer .about-us h4{
+    color: rgb(137, 135, 135);
+}
+.footer .about-us a{
+    text-decoration: none;
+    color: rgb(137, 135, 135);
+}
+.footer .about-us a:hover{
     color: white;
 }
-.fa-twitter:hover{
+.footer .quick-link{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2vh;
+}
+.footer .quick-link h4{
+    color: rgb(137, 135, 135);
+}
+.footer .quick-link a{
+    text-decoration: none;
+    color: rgb(137, 135, 135);
+}
+.footer .quick-link a:hover{
     color: white;
 }
-.fa-linkedin:hover{
+.footer .contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2vh;
+    max-width: 30vw;
+}
+.footer .contact-us p{
+    align-items: flex-start;
+}
+.footer .contact-us h4{
+    color: rgb(137, 135, 135);
+    padding-top: 6vh;
+}
+.footer .contact-us a{
+    text-decoration: none;
+    color: rgb(137, 135, 135);
+    text-align: left;
+}
+.footer .contact-us a:hover{
     color: white;
 }
-.fa-instagram:hover{
-    color: white;
+.footer .sm-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 3vw;
 }
-.fa-github:hover{
-    color: white;
+.copyright{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.copyright p{
+    color: rgb(137, 135, 135);
+}
+.content-area .copyright p{
+    padding: 0;
 }

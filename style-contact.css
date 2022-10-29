@@ -1,80 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
-
 *{
-    box-sizing: border-box;
-    text-decoration: none;
-    margin: 0;
+    margin:0;
     padding: 0;
-}
-/* Header and logo*/
-body{
-    font-family: sans-serif;
-    text-align: center;
-}
-
-.wrapper-upper{
-    width:100vw;
-    height:100vh;
-    width: 100%;
-    height: 80px;
-    background-color: #c0392b;
-    position: fixed; 
-    display:flex;
-    justify-content:space-between;
-}
-.wrapper-down{
-    width: 100%;
-    height:70vh;
-    margin: 0 auto;
-    padding-left: 4%;
-    padding-right: 4%;
- 
-}
-.wrapper p{
-    margin: 1.5%;
-}
-header{
-    width: 100%;
-    height: 80px;
-    background-color: #c0392b;
-    position: static; 
-}
-
-.logo{
-    height: 10%;
-    width: 30%;
-    text-align: left;
-    line-height: 80px;
-    margin-left: 5%;
-}
-.logo a{
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: beige;
-    letter-spacing: 4px;
-}
-nav{
-    line-height: 80px;
-}
-nav a{
-    text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 2px;
-    font-size: 23px;
-    color: beige;
-    padding: 36px;
-    text-align: center;
-}
-
-nav a:hover{
-    
-    color: black;
+    box-sizing: border-box;
 }
 
 body{
     font-family: sans-serif;
-}/*
+}
 .menu_bar{
     background-color: #c0392b;
     height: 80px;
@@ -83,12 +15,19 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-}
-.logo a {
+}/*
+.logo{
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: beige;
     letter-spacing: 4px;
+}*/
+.logo a{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: beige;
+    letter-spacing: 4px;
+    text-decoration: none;
 }
 .menu_bar ul{
     list-style: none;
@@ -110,7 +49,6 @@ body{
     transition:all 0.2s ;
 }
 .menu_bar ul li a:hover{
-   
     color: black;
 }
 .fas{
@@ -156,54 +94,132 @@ body{
 .menu_bar ul li:hover .dropdown_menu2 ul li{
     width: 150px;
     padding: 10px;
-}*/
-
-/*content*/
-.banner-area{
-    background-image: url(image/mypic.jpg);
-    background-size: cover;
-    background-position: center;
-    top: 80px;
-    height: 680px;
-    width: 100%;
-    position: fixed;
 }
-.banner-area:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 800px;
-    background: rgb(21, 21, 29);
-    opacity:.7 ;
-    z-index: -1;
-}
-.banner-area h2{
-    padding-top: 20%;
-    font-size: 80px;
-    color: white;
-}
-.content-area{
-    width: 100%;
-    height: 100vh;
+/* Text */
+.contact{
     position: relative;
-    background-color: white;
-    top: 800px;
+    min-height: 100vh;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url();
+    background-size:cover ;
+    background-position: center;
 }
-.content-area h2{
-    font-size: 40px;
-    margin: 0;
-    padding-top: 80px;
-    letter-spacing: 4px;
+.content{
+    max-width: 800px;
+    text-align: center;
 }
-.content-area p{
-    padding: 2% 0;
-    line-height: 30px;
-    text-align: justify;
+.contact  .content h1 {
+    margin: 12vh 0 4vh;
+    font-weight: 600;
+    color: black;
 }
-/*footer*/
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top:80px ;
+    gap: 70px;
+}
+.container .contactinfo{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactinfo .box .icon{
+    min-width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contactinfo .box .icon .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+h3 {
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+}
+.contact-form{
+    width: 40%;
+   padding: 40px; 
+    /*background-color: aqua;*/
+}
+.contact-form h2{
+    font-size:30px ;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-form .input-box input {
+    width: 100%;
+    padding: 20px 0 10px;
+    font-size: 15px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+}
+.contact-form .input-box input #message {
+    width: 100%;
+    padding:20px 0 10px;
+    font-size: 18px;
+    margin: 15px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    resize: vertical;
+}
+.contact-form .input-box span{
+    position: absolute;
+    left: 0;
+    padding:5px 0;
+    font-size: 15px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5%;
+    color: #666 ;
+}
+.contact-form .input-box input:hover ~ span,.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:hover ~ span,.contact-form .input-box textarea:hover ~ span{
+    color: #db8371;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contact-form .input-box input[type="submit"]{
+    width: 100px;
+    background:#00bcd4;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px ;
+}
+input, textarea {
+    width: 100%;
+    margin-top: 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+/* Footer*/
 footer{
     height: 45vh;
     background-color: rgb(16, 16, 16);
@@ -216,6 +232,7 @@ footer{
     justify-content: space-evenly;
     align-items: center;
     height: 40vh;
+    
 }
 .footer h4{
     display: flex;
@@ -225,8 +242,9 @@ footer{
 .footer .about-us{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     gap: 2vh;
+    
 }
 .footer .about-us h4{
     color: rgb(137, 135, 135);
@@ -241,8 +259,9 @@ footer{
 .footer .quick-link{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
     gap: 2vh;
+    
 }
 .footer .quick-link h4{
     color: rgb(137, 135, 135);
@@ -258,21 +277,17 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     gap: 2vh;
     max-width: 30vw;
-}
-.footer .contact-us p{
-    align-items: flex-start;
 }
 .footer .contact-us h4{
     color: rgb(137, 135, 135);
     padding-top: 6vh;
+    
 }
 .footer .contact-us a{
     text-decoration: none;
     color: rgb(137, 135, 135);
-    text-align: left;
 }
 .footer .contact-us a:hover{
     color: white;
@@ -281,9 +296,7 @@ footer{
     display: flex;
     flex-direction: row;
     gap: 3vw;
-}
-.contact-us .fa .fa-linkedin a:hover{
-    color: #8a3ab9;
+
 }
 .copyright{
     display: flex;
@@ -292,7 +305,4 @@ footer{
 }
 .copyright p{
     color: rgb(137, 135, 135);
-}
-.content-area .copyright p{
-    padding: 0;
 }
