@@ -140,18 +140,28 @@ nav a:hover{
     width: 100%;
     background-color: white;
     top: 80px;
+    line-height: 4vh;
 }
 .content-area h2{
     font-size: 40px;
-    margin: 0;
+    margin: 30px 0;
     padding-top: 100px;
     letter-spacing: 4px;
+    font-family: "Antino", sans-serif;
 }
-.content-area  p{
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-area   .intro-para{
     padding: 4vh 0;
-    margin: 0 5vw 6vh;
+    margin: 3vh 5vw 6vh;
     line-height: 4vh;
     text-align: justify;
+    width: 80vw;
+    font-size: 17px;
 }
 img{
     height: 50vh;
@@ -167,6 +177,8 @@ img{
     padding: 5vh 0;
     font-weight: 700;
     font-size: 30px;
+    font-family: "Antino", sans-serif;
+    letter-spacing: 2px;
 }
 .container1 .architects-text p{
     width: 30vw;
@@ -187,6 +199,8 @@ img{
     padding: 5vh 0;
     font-weight: 700;
     font-size: 30px;
+    letter-spacing: 2px;
+    font-family: "Antino", sans-serif;
 }
 .container2 .management p{
     width: 30vw;
@@ -216,15 +230,13 @@ footer{
     display: flex;
     align-items: center;
     justify-items: flex-start;
+    color: #c0392b;
 }
 .footer .about-us{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 2vh;
-}
-.footer .about-us h4{
-    color: rgb(137, 135, 135);
 }
 .footer .about-us a{
     text-decoration: none;
@@ -238,9 +250,6 @@ footer{
     flex-direction: column;
     align-items: flex-start;
     gap: 2vh;
-}
-.footer .quick-link h4{
-    color: rgb(137, 135, 135);
 }
 .footer .quick-link a{
     text-decoration: none;
@@ -261,7 +270,6 @@ footer{
     align-items: flex-start;
 }
 .footer .contact-us h4{
-    color: rgb(137, 135, 135);
     padding-top: 6vh;
 }
 .footer .contact-us a{

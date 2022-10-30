@@ -147,9 +147,18 @@ nav a:hover{
 .wrapper-down{
     margin: 0 5vw 15vh;
     line-height: 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .wrapper-down h1{
     padding-top: 120px;
+    font-family: "Antino", sans-serif;
+    letter-spacing: 2px;
+}
+.wrapper-down .intro-para{
+    text-align: justify;
+    width: 80vw;
 }
 form{
     width: 60%;
@@ -256,6 +265,8 @@ h2{
     margin-top: 50px 0 50px;
     padding: 20px 0 40px;
     text-align: center;
+    font-family: "Antino", sans-serif;
+    letter-spacing: 2px;
 }
 .faq-container{
     max-width: 50vw;
@@ -338,16 +349,13 @@ footer{
     display: flex;
     align-items: center;
     justify-items: flex-start;
+    color: #c0392b;
 }
 .footer .about-us{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2vh;
-    
-}
-.footer .about-us h4{
-    color: rgb(137, 135, 135);
+    gap: 2vh;   
 }
 .footer .about-us a{
     text-decoration: none;
@@ -360,11 +368,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2vh;
-    
-}
-.footer .quick-link h4{
-    color: rgb(137, 135, 135);
+    gap: 2vh;   
 }
 .footer .quick-link a{
     text-decoration: none;
@@ -385,9 +389,7 @@ footer{
     align-items: flex-start;
 }
 .footer .contact-us h4{
-    color: rgb(137, 135, 135);
-    padding-top: 6vh;
-    
+    padding-top: 6vh;   
 }
 .footer .contact-us a{
     text-decoration: none;

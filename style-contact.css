@@ -46,7 +46,7 @@ body{
     letter-spacing: 2px;
     font-size: 20px;
     color: beige;
-    transition:all 0.2s ;
+   
 }
 .menu_bar ul li a:hover{
     color: black;
@@ -238,16 +238,13 @@ footer{
     display: flex;
     align-items: center;
     justify-items: flex-start;
+    color: #c0392b;
 }
 .footer .about-us{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2vh;
-    
-}
-.footer .about-us h4{
-    color: rgb(137, 135, 135);
+    gap: 2vh;   
 }
 .footer .about-us a{
     text-decoration: none;
@@ -260,11 +257,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2vh;
-    
-}
-.footer .quick-link h4{
-    color: rgb(137, 135, 135);
+    gap: 2vh;   
 }
 .footer .quick-link a{
     text-decoration: none;
@@ -281,9 +274,7 @@ footer{
     max-width: 30vw;
 }
 .footer .contact-us h4{
-    color: rgb(137, 135, 135);
-    padding-top: 6vh;
-    
+    padding-top: 6vh; 
 }
 .footer .contact-us a{
     text-decoration: none;
