@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli&display=swap");
 
 *{
     box-sizing: border-box;
@@ -165,7 +166,7 @@ nav a:hover{
 .wrapper-down h1{
     padding-top: 120px;
 }
-.complain-form{
+form{
     width: 60%;
     margin: 0 auto 5vh;
     padding: 0;
@@ -173,7 +174,6 @@ nav a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .complain-form h2{
     font-size:30px ;
@@ -256,7 +256,7 @@ input, textarea {
 }
 /* FAQ*/
 .faq{
-    background-color: #dbd8d8;
+    background-color: #f0f0f0;
     font-family: 'Poppins', sans-serif;
     letter-spacing:1px;
     border: 1px solid #9fa4a8;
@@ -283,8 +283,8 @@ h2{
 }
 .faq .active::before,
 .faq .active::after{
-    content: '\f075';
-    font-family: 'Font Awesome 5 Free';
+    content: "\f075";
+    font-family:"Font Awesome 5 Free";
     color: #2ecc71;
     font-size: 80px;
     position: absolute;
@@ -324,13 +324,13 @@ h2{
     height: 30px;
     width: 30px;
 }
-.faq-toggle .fas-times{
+.faq-toggle .fa-xmark{
     display: none;
 }
-.faq .active .faq-toggle .fas-times{
+.faq .active .faq-toggle .fa-xmark{
     display: block;
 }
-.faq .active .faq-toggle .fas-chevron-down{
+.faq .active .faq-toggle .fa-caret-down{
     display: none;
 }
 
