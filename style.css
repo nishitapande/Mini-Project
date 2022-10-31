@@ -192,6 +192,7 @@ body{
     position: relative;
     background-color: white;
     top: 800px;
+    background-color: aqua;
 }
 .content-area h2{
     font-size: 25px;
