@@ -164,7 +164,7 @@ body{
     background-size: cover;
     background-position: center;
     top: 80px;
-    height: 680px;
+    height: 80vh;
     width: 100%;
     position: fixed;
 }
