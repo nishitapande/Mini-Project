@@ -8,6 +8,7 @@ body{
     font-family: sans-serif;
 }
 .menu_bar{
+    position: fixed;
     background-color: #c0392b;
     height: 80px;
     width: 100%;
@@ -15,13 +16,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0 5%;
-}/*
-.logo{
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: beige;
-    letter-spacing: 4px;
-}*/
+}
 .logo a{
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -51,16 +46,11 @@ body{
 .menu_bar ul li a:hover{
     color: black;
 }
-.fas{
-    
-}
 .fs-caret-down{
     height: 2px;
     width: 1px;
     color: rgb(255, 255, 255);
-    
 }
-
 .dropdown_menu{
     display: none;
 }
@@ -97,7 +87,7 @@ body{
 }
 /* Text */
 .contact{
-    position: relative;
+    position: static;
     min-height: 100vh;
     padding: 20px 100px;
     display: flex;
@@ -155,8 +145,12 @@ h3 {
 }
 .contact-form{
     width: 40%;
-   padding: 40px; 
+    padding: 40px; 
+    
     /*background-color: aqua;*/
+}
+form{
+    position: static;
 }
 .contact-form h2{
     font-size:30px ;
@@ -166,7 +160,7 @@ h3 {
     text-align: center;
 }
 .contact-form .input-box{
-    position: relative;
+    position: static;
     width: 100%;
     margin-top: 10px;
 }
@@ -189,8 +183,7 @@ h3 {
     outline: none;
     resize: vertical;
 }
-.contact-form .input-box span{
-    position: absolute;
+.contact-form  span .input-box span{
     left: 0;
     padding:5px 0;
     font-size: 15px;
@@ -199,7 +192,7 @@ h3 {
     transition: 0.5%;
     color: #666 ;
 }
-.contact-form .input-box input:hover ~ span,.contact-form .input-box input:valid ~ span,
+.contact-form  .input-box  span ~ input:hover ,.contact-form .input-box span ~ input:valid  ,
 .contact-form .input-box textarea:hover ~ span,.contact-form .input-box textarea:hover ~ span{
     color: #db8371;
     font-size: 12px;
