@@ -65,6 +65,9 @@ nav a:hover{
     align-items: center;
     padding: 0 5%;
 }
+.logo{
+    width: 200px;
+}
 .logo a{
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
