@@ -75,9 +75,9 @@ body{
 .menu_bar ul li a{
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 2rem;
-    font-weight: 500;
+    /* font-weight: 500; */
     color: beige;
     transition:all 0.2s ;
 }
@@ -326,84 +326,9 @@ h2{
     display: none;
 }
 
-/*Footer*/
-footer{
-    height: 45vh;
-    background-color: rgb(16, 16, 16);
-}
-.footer{
-    display: grid;
-    background-color: rgb(16, 16, 16);
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 3.2rem 0 3.2rem;
-    column-gap: 2rem;
-    align-content: center;
-    justify-items: center;
-}
-.head-ter{
-    display: flex;
-    align-items: center;
-    justify-items: flex-start;
-    color: #c0392b;
-    font-size: 2.4rem;
-}
-.about-us,
-.quick-link,
-.contact-us{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-    font-size: 1.4rem;
-}
-.footer .about-us a{
-    text-decoration: none;
-    color: rgb(137, 135, 135);
-}
-.footer .about-us a:hover{
-    color: white;
-}
-.footer .quick-link a{
-    text-decoration: none;
-    color: rgb(137, 135, 135);
-}
-.footer .quick-link a:hover{
-    color: white;
-}
-.contact-us{
-    max-width: 30vw;
-}
-.footer .contact-us p{
-    align-items: flex-start;
-}
-.footer .contact-us h4{
-    padding-top: 6vh;
-}
-.footer .contact-us a{
-    text-decoration: none;
-    color: rgb(137, 135, 135);
-    text-align: left;
-}
-.footer .contact-us a:hover{
-    color: white;
-}
-.footer .sm-icons{
-    display: flex;
-    flex-direction: row;
-    gap: 3vw;
-}
-.copyright{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    font-size: 1.4rem;
-}
-.copyright p{
-    color: rgb(137, 135, 135);
-}
-.content-area .copyright p{
-    padding: 0;
-}
+/* ************************* */
+/* FOOTER */
+/* ************************* */
 .ter{
     padding-top: 5rem;
 }
