@@ -6,59 +6,48 @@
     margin: 0;
     padding: 0;
 }
-/* Header and logo*/
+html{
+    font-size: 62.5%;;
+}
 body{
     font-family: sans-serif;
     text-align: center;
-}/*
-.wrapper{
-    width: 100%;
+}
+/* ************************* */
+/* GLOBAL STYLE */
+/* ************************* */
+.max-width{
+    max-width: 130rem;
     margin: 0 auto;
+    padding: 3.6rem 0 2.6rem;
 }
-.wrapper p{
-    margin: 1.5%;
+.heading-primary{
+    font-size: 4.2rem;
+    line-height: 1.05;
+    margin-bottom: 3.2rem;
 }
-header{
-    width: 100%;
-    height: 80px;
-    background-color: #c0392b; 
+.heading-primary,
+.heading-secondary,
+.heading-tertiary{
+    font-weight: 600;
+    color: #333;
+    letter-spacing: -0.5px;
 }
-.logo{
-    height: 10%;
-    width: 30%;
-    float: left;
-    text-align: left;
-    line-height: 80px;
-    margin-left: 5%;
+.heading-secondary{
+    font-size: 3.6rem;
+    margin: 1.6rem 0;
 }
-.logo a{
-    text-decoration: none;
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: beige;
-    letter-spacing: 4px;
+.vl{
+    border-left: 0.3rem solid #73221a;
+    height: 5rem;
 }
-nav{
-    float: right;
-    line-height: 80px;
-}
-nav a{
-    text-decoration: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 2px;
-    font-size: 23px;
-    color: beige;
-    padding: 36px;
-    text-align: center;
-}
-
-nav a:hover{
-    color: black;
-}*/
+/* ************************* */
+/* HEADER*/
+/* ************************* */
 .menu_bar{
     position: fixed;
     background-color: #c0392b;
-    height: 80px;
+    height: 8rem;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -66,156 +55,109 @@ nav a:hover{
     padding: 0 5%;
 }
 .logo{
-    width: 200px;
-}
-.logo a{
-    font-size: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: beige;
-    letter-spacing: 4px;
+    width: 20rem;
 }
 .menu_bar ul{
     list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 3rem;
 }
 .menu_bar ul li{
-    padding: 5px 15px;
+    padding: 0.5rem 1.5rem;
     position: relative;
 }
 .menu_bar ul li a{
     text-decoration: none;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    letter-spacing: 2px;
-    font-size: 20px;
+    letter-spacing: 1px;
+    font-size: 2rem;
     color: beige;
     transition:all 0.2s ;
 }
 .menu_bar ul li a:hover{
-   
     color: black;
 }
 .fs-caret-down{
     height: 2px;
     width: 1px;
     color: rgb(255, 255, 255);
-    
 }
-
-.dropdown_menu{
-    display: none;
-}
-.menu_bar ul li:hover .dropdown_menu{
-    display: block;
-    position: absolute;
-    left: 0;
-    background-color: #c0392b;
-}
-.menu_bar ul li:hover .dropdown_menu ul{
-    display: block;
-    margin: 10px;
-}
-.menu_bar ul li:hover .dropdown_menu ul li{
-    width: 150px;
-    padding: 10px;
-}
+.dropdown_menu,
 .dropdown_menu2{
     display: none;
 }
+.menu_bar ul li:hover .dropdown_menu,
 .menu_bar ul li:hover .dropdown_menu2{
     display: block;
     position: absolute;
+    text-align: startcd ;
     left: 0;
     background-color: #c0392b;
 }
+.menu_bar ul li:hover .dropdown_menu ul,
 .menu_bar ul li:hover .dropdown_menu2 ul{
     display: block;
     margin: 10px;
 }
+.menu_bar ul li:hover .dropdown_menu ul li,
 .menu_bar ul li:hover .dropdown_menu2 ul li{
     width: 150px;
     padding: 10px;
 }
-/* Content*/
+/* ************************* */
+/* SECTION CONTENT*/
+/* ************************* */
 .content-area{
-    width: 100%;
-    background-color: white;
-    top: 80px;
-    line-height: 4vh;
-}
-.content-area h2{
-    font-size: 40px;
-    margin: 30px 0;
-    padding-top: 100px;
-    letter-spacing: 4px;
-    font-family: "Antino", sans-serif;
+    top:10rem;
+    padding: 9.9rem 0 1.2rem;
 }
 .wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 110rem;
+    margin: 0 auto;
 }
-.content-area   .intro-para{
-    padding: 4vh 0;
-    margin: 3vh 5vw 6vh;
-    line-height: 4vh;
+.intro-para{
+    line-height: 3rem;
     text-align: justify;
-    width: 80vw;
-    font-size: 17px;
+    font-size: 1.8rem;
+    letter-spacing: 0.7px;
 }
-img{
-    height: 50vh;
-    width: 30vw;
+/* ************************* */
+/* SECTION DESCRIPTION*/
+/* ************************* */
+.pic-architects,
+.pic-interior,
+.pic-management,
+.pic-security{
+    width: 45rem;
+    height: 35rem;
 }
-.container1{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 6vh 0 6vh;
-}
-.container1 h3{
-    padding: 5vh 0;
-    font-weight: 700;
-    font-size: 30px;
-    font-family: "Antino", sans-serif;
-    letter-spacing: 2px;
-}
-.container1 .architects-text p{
-    width: 30vw;
-    text-align: justify;
-}
-.container1 .interior-designer p{
-    width: 30vw;
-    text-align: justify;
-
-}
+.container1,
 .container2{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 6vh 0 6vh;
 }
+.container1 h3,
 .container2 h3{
     padding: 5vh 0;
-    font-weight: 700;
-    font-size: 30px;
-    letter-spacing: 2px;
-    font-family: "Antino", sans-serif;
+    font-size: 3.2REM;
 }
-.container2 .management p{
-    width: 30vw;
+.text-1,
+.text-2,
+.text-3,
+.text-4{
+    width: 45rem;
     text-align: justify;
-
+    font-size: 1.8rem;
+    letter-spacing: .7px;
+    line-height:2.8rem;
 }
-.container2 .security p{
-    width: 30vw;
-    text-align: justify;
-
-}
-/*Footer*/
+/* ************************* */
+/* FOOTER */
+/* ************************* */
 footer{
     height: 45vh;
     background-color: rgb(16, 16, 16);
@@ -229,59 +171,46 @@ footer{
     align-items: center;
     height: 40vh;
 }
-.footer h4{
+
+.footer h3{
     display: flex;
     align-items: center;
     justify-items: flex-start;
     color: #c0392b;
+    font-size: 1.8rem;
 }
-.footer .about-us{
+.ter{
+    padding-top: 5rem;
+}
+.about-us,
+.quick-link,
+.contact-us{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2vh;
+    gap: 1rem;
 }
-.footer .about-us a{
+.about-us a,
+.quick-link a,
+.contact-us a{
     text-decoration: none;
     color: rgb(137, 135, 135);
+    font-size: 1.6rem;
 }
-.footer .about-us a:hover{
-    color: white;
-}
-.footer .quick-link{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 2vh;
-}
-.footer .quick-link a{
-    text-decoration: none;
-    color: rgb(137, 135, 135);
-}
-.footer .quick-link a:hover{
+.about-us a:hover,
+.quick-link a:hover,
+.contact-us a:hover{
     color: white;
 }
 .footer .contact-us{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     gap: 2vh;
     max-width: 30vw;
 }
 .footer .contact-us p{
     align-items: flex-start;
 }
-.footer .contact-us h4{
-    padding-top: 6vh;
-}
 .footer .contact-us a{
-    text-decoration: none;
-    color: rgb(137, 135, 135);
     text-align: left;
-}
-.footer .contact-us a:hover{
-    color: white;
 }
 .footer .sm-icons{
     display: flex;

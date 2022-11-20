@@ -39,7 +39,9 @@ html{
     height: 5rem;
 }
 
-/* Header and logo*/
+/* ************************* */
+/* HEADER*/
+/* ************************* */
 body{
     font-family: sans-serif;
     text-align: center;
@@ -77,14 +79,12 @@ body{
     transition:all 0.2s ;
 }
 .menu_bar ul li a:hover{
-   
     color: black;
 }
 .fs-caret-down{
     height: 2px;
     width: 1px;
     color: rgb(255, 255, 255);
-    
 }
 
 .dropdown_menu,
