@@ -92,7 +92,7 @@ body{
 .menu_bar ul li:hover .dropdown_menu2{
     display: block;
     position: absolute;
-    text-align: startcd ;
+    text-align: start ;
     left: 0;
     background-color: #c0392b;
 }
