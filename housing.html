@@ -275,7 +275,16 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks for Contacting us! We Will Contact You Soon."))
+            .then(response => alert("Thanks for Contacting us! We Will Contact You Soon.")
+            .then(
+                document.getElementById("fullname").value = "",
+                document.getElementById("mobilenumber").value = "",
+                document.getElementById("society-name").value = "",
+                document.getElementById("block").value = "",
+                document.getElementById("flatno").value = "",
+                document.getElementById("message").value = ""
+            )
+            )
             .catch(error => console.error('Error!', error.message))
         })
       </script>
