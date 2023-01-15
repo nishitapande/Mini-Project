@@ -161,6 +161,20 @@ body{
 /* ************************* */
 /* SECTION COMPLAIN FORM*/
 /* ************************* */
+.form-box{
+    max-width: 110rem;
+    background: linear-gradient(
+      135deg,
+      hsla(6, 64%, 53%, 0.886),
+      hsla(227, 72%, 32%, 0.607)
+    );
+    margin: 7rem auto ;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+    border-radius: 11px;
+    overflow: hidden;
+}
 form{
     max-width: 80rem;
     margin: 0 auto;
@@ -172,6 +186,7 @@ form{
 }
 .complain-form h2{
     font-family: "Antino", sans-serif;
+    margin-bottom: .5rem;
 }
 input{
     font-size: 1.8rem;
@@ -180,7 +195,7 @@ input{
     margin-top: 2rem;
 }
 .complain-form .input-box{
-    margin-top: 10px;
+    margin-top: 1px;
     font-size: 3.5rem;
 }
 .input-box input {
@@ -198,12 +213,16 @@ input{
     resize: vertical;
 }
 .input-box input[type="submit"]{
-    width: 35rem;
+    width: 50rem;
     background:#c8e1e4;
     color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 1rem 0 4rem;
     font-size: 2.4rem ;
+}
+.input-box input[type="submit"]:hover{
+    background:#ffffff;
+    color: rgb(0, 0, 0);
 }
 textarea {
     max-width: 100%;
@@ -239,6 +258,7 @@ textarea {
 .house input{
     width: 25rem;
 }
+
 /* ************************* */
 /* SECTION FAQ*/
 /* ************************* */
