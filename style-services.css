@@ -175,6 +175,9 @@ body{
     border-radius: 11px;
     overflow: hidden;
 }
+/* .form-box .active{
+ background-color: #fff;
+} */
 form{
     max-width: 80rem;
     margin: 0 auto;
@@ -212,19 +215,7 @@ input{
     outline: none;
     resize: vertical;
 }
-.input-box input[type="submit"]{
-    width: 50rem;
-    background:#c8e1e4;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    padding: 1rem 0 4rem;
-    font-size: 2.4rem ;
-    border-radius: 12px;
-}
-.input-box input[type="submit"]:hover{
-    background:#ffffff;
-    color: rgb(0, 0, 0);
-}
+
 textarea {
     max-width: 100%;
     margin-top: 2rem;
@@ -259,7 +250,74 @@ textarea {
 .house input{
     width: 25rem;
 }
+.btn{
+    width: 50rem;
+    height: 2rem;
+    background:#c8e1e4;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 2rem;
+    padding: 1rem 0 4rem;
+    font-size: 2.4rem ;
+    border-radius: 12px;
+    border: none;
+}
+.btn:hover{
+    background:#ffffff;
+    color: rgb(0, 0, 0);
+}
+.pop-up{
+    width: 50rem;
+    height: 35rem;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 3rem 3rem;
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top: 170%;
+    transform: translate(-50%,-50%) scale(1);
+}
+.img-tick{
+    height: 25rem;
+    width: 25rem;
+    margin-bottom: 0;
+    margin-top: -12rem;
+    box-shadow: 0 0px 0 px rgba(0, 0, 0, 0.2);
+}
+.heading-tick{
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 1.2rem;
+}
+.tick-text{
+    font-size: 1.8rem;
+    line-height: 2;
 
+}
+.ok-btn{
+    margin-top: 1.8rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    height: 5rem;
+    width: 10rem;
+    border-radius: 3px;
+    border: none;
+    /* background-color: hsla(204, 70%, 53%, 0.537); */
+    background-color: hsla(104, 63%, 56%, 0.782);
+    cursor: pointer;
+}
+.ok-btn:hover{
+    background-color: #d4d7db94;
+}
 /* ************************* */
 /* SECTION FAQ*/
 /* ************************* */

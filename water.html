@@ -146,7 +146,7 @@
                             <input type="text" name="mobilenumber" required="required" placeholder="Mobile Number" >
                         </div>
                         <div class="input-box">
-                            <input type="email" name="email" required="required" placeholder="E-mail" >
+                            <input type="email" name="email" required="required" placeholder="E-mail"  id="email">
                         </div>
                         <select id="society-name" name="society" required="required" >
                             <option value="No option selected" disabled selected hidden>Select Your Society</option>
@@ -170,7 +170,15 @@
                             <textarea id="message" placeholder="Type your complain" cols="70" rows="8" name="complaint"></textarea>
                         </div>
                         <div class="input-box">
-                            <input type="submit" name="submit" value="Send">
+                            <button class="btn" type="submit" name="submit" value="Send" onclick="openPopup()">Submit</button>
+                        </div>
+                        <div class="pop-up-box">
+                                <div class="pop-up" id="popup">
+                                <img src="image/tick.png" alt="" class="img-tick">
+                                <h2 class="heading-secondary heading-tick">Thank You!</h2>
+                                <p class="tick-text">Your details have been successfully submitted. Thanks!</p>
+                                <button class="ok-btn" type="button" onclick="closePopup()">OK</button>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -276,18 +284,26 @@
         form.addEventListener('submit', e => {
           e.preventDefault()
           fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => alert("Thanks for Contacting us! We Will Contact You Soon.")
             .then(
                 document.getElementById("fullname").value = "",
                 document.getElementById("mobilenumber").value = "",
-                document.getElementById("society-name").value = "",
-                document.getElementById("block").value = "",
+                document.getElementById("email").value = "",
+
+                document.getElementById("society-name").value = "No option selected",
+                document.getElementById("block").value = "No option selected",
                 document.getElementById("flatno").value = "",
                 document.getElementById("message").value = ""
             )
-            )
             .catch(error => console.error('Error!', error.message))
         })
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open-popup");
+            
+        }
+        function closePopup(){
+            popup.classList.remove("open-popup");
+        }
       </script>
     <script src="script.js"></script>
 </body>
