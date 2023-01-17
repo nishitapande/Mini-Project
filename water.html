@@ -273,8 +273,8 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>Abelia © 2022 </p>
-                </div>
+                <p>Abelia © <span class="year">2022</span>  </p>
+            </div>
         </footer>
     </div>
     <script>
@@ -296,14 +296,14 @@
             )
             .catch(error => console.error('Error!', error.message))
         })
-        let popup = document.getElementById("popup");
-        function openPopup(){
-            popup.classList.add("open-popup");
-            
-        }
-        function closePopup(){
-            popup.classList.remove("open-popup");
-        }
+            let popup = document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open-popup");
+                
+            }
+            function closePopup(){
+                popup.classList.remove("open-popup");
+            }
       </script>
     <script src="script.js"></script>
 </body>
