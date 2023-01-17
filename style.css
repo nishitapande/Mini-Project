@@ -123,7 +123,8 @@ body{
 }
 
 .banner-area{
-	background-image: url("image/index-pic.jpg");
+	background-image: url("image/index-pic.webp");
+
 	background-size: cover;
 	background-position: center;
 	top: 8rem;
